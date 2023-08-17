@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Página de Inicio
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -15,6 +15,24 @@
       Aquí encontrarás recursos y herramientas para mejorar tu salud y bienestar.
     </ion-card-content>
   </ion-card>
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="play-circle"></ion-icon>
+        Food
+      </ion-tab-button>
+      <ion-tab-button tab="radio">
+        <ion-icon name="radio"></ion-icon>
+        Home
+      </ion-tab-button>
+      <ion-tab-button tab="search">
+        <ion-icon name="search"></ion-icon>
+        Training
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 
   <!-- Otras secciones o componentes que quieras mostrar en la página de inicio -->
 </ion-content>
