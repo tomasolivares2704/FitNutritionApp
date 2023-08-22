@@ -8,12 +8,15 @@ import { SharedPageRoutingModule } from './shared-routing.module';
 
 import { SharedPage } from './shared.page';
 
+import {ComponentesPageModule} from './componentes/componentes.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SharedPageRoutingModule
+    SharedPageRoutingModule,
+    ComponentesPageModule,
   ],
   declarations: [SharedPage]
 })

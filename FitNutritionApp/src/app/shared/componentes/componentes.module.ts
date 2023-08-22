@@ -8,12 +8,15 @@ import { ComponentesPageRoutingModule } from './componentes-routing.module';
 
 import { ComponentesPage } from './componentes.page';
 
+import {TabsPageModule} from './tabs/tabs.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ComponentesPageRoutingModule
+    ComponentesPageRoutingModule,
+    TabsPageModule
   ],
   declarations: [ComponentesPage]
 })
