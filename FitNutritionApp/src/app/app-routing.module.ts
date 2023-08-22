@@ -22,6 +22,14 @@ const routes: Routes = [
   {
     path: 'food',
     loadChildren: () => import('./food/food.module').then( m => m.FoodPageModule)
+  },
+  {
+    path: 'page-tabs',
+    loadChildren: () => import('./page-tabs/page-tabs.module').then( m => m.PageTabsPageModule)
+  },
+  {
+    path: 'shared',
+    loadChildren: () => import('./shared/shared.module').then( m => m.SharedPageModule)
   }
 ];
 
