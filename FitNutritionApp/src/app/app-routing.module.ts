@@ -4,12 +4,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'home',
     pathMatch: 'full'
-  },
-  {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
     path: 'home',
@@ -22,10 +18,6 @@ const routes: Routes = [
   {
     path: 'food',
     loadChildren: () => import('./food/food.module').then( m => m.FoodPageModule)
-  },
-  {
-    path: 'page-tabs',
-    loadChildren: () => import('./page-tabs/page-tabs.module').then( m => m.PageTabsPageModule)
   },
   {
     path: 'shared',

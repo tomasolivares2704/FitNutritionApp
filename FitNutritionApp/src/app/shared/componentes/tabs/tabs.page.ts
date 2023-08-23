@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tabs',
@@ -6,12 +7,21 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./tabs.page.scss'],
 })
 export class TabsPage implements OnInit {
-  @Input() dataEntrance:any;
   
-
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  goHomy(){
+    this.router.navigate(['/home'])
+  }
+
+  goFood(){
+    this.router.navigate(['/food'])
+  }
+
+  goTraining(){
+    this.router.navigate(['/training'])
+  }
 }

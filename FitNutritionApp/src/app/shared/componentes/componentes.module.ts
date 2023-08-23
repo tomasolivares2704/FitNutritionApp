@@ -8,7 +8,6 @@ import { ComponentesPageRoutingModule } from './componentes-routing.module';
 
 import { ComponentesPage } from './componentes.page';
 
-import {TabsPageModule} from './tabs/tabs.module';
 
 @NgModule({
   imports: [
@@ -16,7 +15,6 @@ import {TabsPageModule} from './tabs/tabs.module';
     FormsModule,
     IonicModule,
     ComponentesPageRoutingModule,
-    TabsPageModule
   ],
   declarations: [ComponentesPage]
 })
