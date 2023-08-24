@@ -7,13 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { TrainingPageRoutingModule } from './training-routing.module';
 
 import { TrainingPage } from './training.page';
+import { SharedPageModule } from '../shared/shared.module';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TrainingPageRoutingModule
+    TrainingPageRoutingModule,
+    SharedPageModule
   ],
   declarations: [TrainingPage]
 })

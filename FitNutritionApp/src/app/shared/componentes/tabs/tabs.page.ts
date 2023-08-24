@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,22 +6,17 @@ import { Router } from '@angular/router';
   templateUrl: './tabs.page.html',
   styleUrls: ['./tabs.page.scss'],
 })
-export class TabsPage implements OnInit {
-  
-  constructor(private router: Router) { }
+export class TabsPage {
 
-  ngOnInit() {
-  }
+  constructor(private router: Router) {}
 
-  goHomy(){
-    this.router.navigate(['/home'])
-  }
-
-  goFood(){
-    this.router.navigate(['/food'])
-  }
-
-  goTraining(){
-    this.router.navigate(['/training'])
+  changeTab(tab: string) {
+    if (tab === 'food') {
+      this.router.navigate(['/food']);
+    } else if (tab === 'home') {
+      this.router.navigate(['/home']);
+    } else if (tab === 'training') {
+      this.router.navigate(['/training']);
+    }
   }
 }

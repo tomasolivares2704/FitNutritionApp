@@ -8,12 +8,16 @@ import { FoodPageRoutingModule } from './food-routing.module';
 
 import { FoodPage } from './food.page';
 
+import { SharedPageModule } from '../shared/shared.module';
+
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FoodPageRoutingModule
+    FoodPageRoutingModule,
+    SharedPageModule,
   ],
   declarations: [FoodPage]
 })

@@ -1,13 +1,171 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>food</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">food</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-header [translucent]="true">
+   <ion-toolbar>
+    <ion-title>Food</ion-title>
+   </ion-toolbar>
+  </ion-header><br><br>
+
+  
+  <ion-grid>
+    <!-- PRIMER ELEMENTO-->
+   <ion-row>
+    <ion-col size="7">
+     <ion-card >
+      <img class="card-img" id="click-trigger" src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2020/07/Salmon-Avocado-Salad-6.jpg">
+      <ion-popover trigger="click-trigger" triggerAction="click">
+        <ng-template>
+          <ion-content class="ion-padding">
+            <ion-list>
+              <ion-item>
+                <ion-label>Proteinas</ion-label>
+                <ion-label>28g</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Carbohidratos</ion-label>
+                <ion-label>120g</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Grasas</ion-label>
+                <ion-label>15g</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Calorias</ion-label>
+                <ion-label>362Cal</ion-label>
+              </ion-item>
+    </ion-list>
+
+          </ion-content>
+        </ng-template>
+      </ion-popover>
+
+    </ion-card>
+    </ion-col>
+
+    <ion-col size="5">
+      <ion-card-header>
+        <ion-card-title>Sald Salmon</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>
+          Esta receta de ensalada de salmón es un plato principal con verduras picadas, pescado desmenuzado y aderezo cítrico picante.
+        </p>
+      </ion-card-content>
+
+    </ion-col>
+
+   </ion-row>
+
+   <!-- SEGUNDO ELEMENTO ELEMENTO-->
+   <ion-row>
+    <ion-col size="7">
+  
+     <ion-card >
+      <img class="card-img" id="click-trigger1" src="https://www.primaverakitchen.com/wp-content/uploads/2019/04/Shrimp-and-Sausage-Vegetable-Skillet-Primavera-Kitchen-2.jpg">
+      <ion-popover trigger="click-trigger1" triggerAction="click">
+        <ng-template>
+          <ion-content class="ion-padding">
+            <ion-list>
+              <ion-item>
+                <ion-label>Proteinas</ion-label>
+                <ion-label>24g</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Carbohidratos</ion-label>
+                <ion-label>8g</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Grasas</ion-label>
+                <ion-label>18g</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Calorias</ion-label>
+                <ion-label>284Cal</ion-label>
+              </ion-item>
+    </ion-list>
+
+          </ion-content>
+        </ng-template>
+      </ion-popover>
+
+    </ion-card>
+    </ion-col>
+
+    <ion-col size="5">
+      <ion-card-header>
+        <ion-card-title>Shrimp And Sausage Vegetable Skillet</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>
+          Esta sartén de verduras con camarones y salchichas es una receta de preparación de comidas fácil de preparar para los días ocupados de la semana.      
+        </p>
+      </ion-card-content>
+
+    </ion-col>
+
+   </ion-row>
+
+   <!-- TERCER ELEMENTO ELEMENTO-->
+   <ion-row>
+    <ion-col size="7">
+  
+     <ion-card >
+      <img class="card-img" id="click-trigger2" src="https://www.primaverakitchen.com/wp-content/uploads/2019/03/Chicken-and-Bell-Peppers-Skillet-Primavera-Kitchen-2.jpg">
+      <ion-popover trigger="click-trigger2" triggerAction="click">
+        <ng-template>
+          <ion-content class="ion-padding">
+            <ion-list>
+              <ion-item>
+                <ion-label>Proteinas</ion-label>
+                <ion-label>18g</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Carbohidratos</ion-label>
+                <ion-label>9g</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Grasas</ion-label>
+                <ion-label>18g</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-label>Calorias</ion-label>
+                <ion-label>258Cal</ion-label>
+              </ion-item>
+    </ion-list>
+
+          </ion-content>
+        </ng-template>
+      </ion-popover>
+
+    </ion-card>
+    </ion-col>
+
+    <ion-col size="5">
+      <ion-card-header>
+        <ion-card-title>Chicken And Bell Peppers Skillet</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>
+          La sartén de pollo y pimientos morrones es uno de esos platos que se incluirán en la cena familiar porque resulta que agrada a todos.
+        </p>
+      </ion-card-content>
+
+    </ion-col>
+
+   </ion-row>
+
+   
+
+
+
+  </ion-grid>
+
+ 
+  
+
+
+
 </ion-content>

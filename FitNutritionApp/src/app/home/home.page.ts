@@ -13,7 +13,9 @@ export class HomePage implements OnInit {
   ngOnInit() {
   }
 
-  goHome(){
-    this.router.navigate(['/detail'])
+  gotofood(){
+    console.log('gotofood() clicked');
+    this.router.navigate(['/food'])
   }
+
 }
